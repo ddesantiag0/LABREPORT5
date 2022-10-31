@@ -73,6 +73,8 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt
 ### grep -h 
 
 ### Example 1 of "-h"
+
+```
 desantiago@Davids-MacBook-Air-2 technical % grep -h "tired"  ./biomed/*.txt
           tired of being sick and tired and I knew I could be a
           better parent to my children and I just was tired. I
@@ -81,3 +83,4 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "tired"  ./biomed/*.txt
           young retired breeders, were purchased from the National
           retired: bo322, bo395, bo663, bo667, bo669 and bo671 (G.
           candidate CDSs include retired Bnums (six Magnums), CDSs
+```
