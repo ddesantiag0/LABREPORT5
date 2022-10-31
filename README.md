@@ -2,6 +2,9 @@
 
 ## GREP COMMAND
 
+### grep -c
+For each input file, the command outputs the number of matching lines.
+
 ### Example 1 of "-c"
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "call"  ./911report/*.txt
