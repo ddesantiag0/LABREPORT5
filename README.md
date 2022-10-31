@@ -5,7 +5,7 @@
 ### grep -c
 For each input file, the command outputs the number of matching lines.
 
-### Example 1 of "-c"
+**Example 1 of "-c"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "call"  ./911report/*.txt
 ./911report/chapter-1.txt:69
@@ -26,7 +26,7 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "call"  ./911report/*.txt
 ./911report/chapter-9.txt:60
 ./911report/preface.txt:0
 ```
-### Example 2 of "-c"
+**Example 2 of "-c"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "words"  ./plos/*.txt      
 ./plos/journal.pbio.0020001.txt:0
@@ -47,7 +47,7 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "words"  ./plos/*.txt
 ./plos/journal.pbio.0020063.txt:0
 ./plos/journal.pbio.0020064.txt:0
 ```
-### Example 3 of "-c"
+**Example 3 of "-c"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt    
 ./biomed/1468-6708-3-1.txt:0
@@ -72,7 +72,7 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt
 ```
 ### grep -h 
 
-### Example 1 of "-h"
+**Example 1 of "-h"**
 
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -h "tired"  ./biomed/*.txt
