@@ -3,7 +3,7 @@
 ## GREP COMMAND
 
 ### grep -c
-For each input file, the command outputs the number of matching lines.
+For each input file, the command outputs the number of matching lines. This is useful when you aren't looking for specific text, but searching for every single file that carries the phrase or word that you are looking for.
 
 **Example 1 of "-c"**
 ```
@@ -71,6 +71,7 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt
 ./biomed/1471-2091-3-18.txt:0
 ```
 ### grep -h 
+Show only the lines that match and hide the filenames. This is useful when already in a certain file and you dont want it to repeatively keep on printing along with the text that you know you're in.
 
 **Example 1 of "-h"**
 
@@ -178,4 +179,56 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "burns"  ./biomed/*.txt
           addition, patients with burns, hemorrhagic shock or those
         trauma, burns, haemorrhages, hypothermia, pancreatitis and
         are massively elevated in burns [ 11], heat stroke [ 21],
+```
+
+### grep -w
+Displays the matching entire word along with in what exact file it was found. This is useful when you need to know where to find the certain phrase you're looking for
+
+**Example 1 of "-w"**
+```
+desantiago@Davids-MacBook-Air-2 technical % grep -w "burns"  ./biomed/*.txt
+./biomed/1476-069X-2-9.txt:            substitute chemical include acute irritation and burns
+./biomed/cc1498.txt:          addition, patients with burns, hemorrhagic shock or those
+./biomed/cc1843.txt:        trauma, burns, haemorrhages, hypothermia, pancreatitis and
+./biomed/cc300.txt:        are massively elevated in burns [ 11], heat stroke [ 21],
+```
+
+**Example 2 of "w"**
+```
+desantiago@Davids-MacBook-Air-2 technical % grep -w "cops"  ./911report/*.txt
+./911report/chapter-9.txt:                to take orders from cops. At least one firefighter who was in the North Tower has
+```
+
+**Example 3 of "w"**
+```
+desantiago@Davids-MacBook-Air-2 technical % grep -w "child"  ./plos/*.txt
+./plos/journal.pbio.0020046.txt:        is no good way of predicting whether an affected child will recover (Yairi and Ambrose
+./plos/journal.pbio.0020046.txt:        However, studies of personality traits and child–parent interactions did not detect
+./plos/journal.pbio.0020140.txt:        so naturally to humans (and are in place so early in child development) that some might
+./plos/journal.pbio.0020150.txt:        conclusions to the individual child. “At the moment, fMRI would be among the most useless
+./plos/journal.pbio.0020150.txt:        consider other factors, such as a history of child abuse, in an attempt to more fully
+./plos/journal.pbio.0020262.txt:        scientist looking like a small child beside Chris Greener, the tallest man in Britain, or
+./plos/journal.pbio.0020267.txt:        Sara Webb, a child psychologist at UW, has followed about 70 autistic children since the
+./plos/journal.pbio.0020267.txt:        differently from seeing a favorite toy, in the same way a normal child does. But activity
+./plos/journal.pbio.0020267.txt:        opportunity to be shaped by the experience and input that a typically developing child
+./plos/journal.pbio.0020267.txt:        behavioral therapy an autistic child receives, the better the outcome will be. That's why
+./plos/journal.pbio.0020337.txt:        energies to build up, cycle by cycle, into an appreciable motion—like boosting a child on a
+./plos/journal.pbio.0020337.txt:        child-on-swing analogy, rapidly bring swinging to a halt. Therefore, the argument goes, the
+./plos/pmed.0010021.txt:        spent on one disease cannot be spent on another. Is it better to treat one child with
+./plos/pmed.0010024.txt:        to calculate intracellular volume for each child. They also used a less invasive and more
+./plos/pmed.0020016.txt:          treatment for STIs, and prevention of mother-to-child transmission. The comprehensive
+./plos/pmed.0020034.txt:        allergen and the results strongly suggested that exposure in the child's own house was the
+./plos/pmed.0020034.txt:        the United States Head Start program (a child-development program that aims to increase the
+./plos/pmed.0020039.txt:        number of orphans and vulnerable children, reduce mother to child transmission of the
+./plos/pmed.0020061.txt:        The developing fetus and young child is particularly vulnerable to certain environmental
+./plos/pmed.0020061.txt:        enter a child's body transplacentally during fetal development or by direct ingestion of
+./plos/pmed.0020061.txt:        a child's social and emotional well-being. It is also uncertain whether tests conducted
+./plos/pmed.0020062.txt:        in mother and child care, and staff training in cultural competence. Results of the pilot
+./plos/pmed.0020067.txt:        those related to poverty reduction, child health, and education. However, there are also
+./plos/pmed.0020104.txt:        This is not to say that the big infectious disease killers and child health problems
+./plos/pmed.0020182.txt:          maternalâ€“child health clinics in Gaborone or three nearby villages,
+./plos/pmed.0020246.txt:            mortality and for the healthy development of the child;
+./plos/pmed.0020247.txt:        mother-to-child transmission [7–9]. It may force mothers to expose babies to HIV infection
+./plos/pmed.0020249.txt:        studies surprisingly showed that two-thirds of perinatal infections (i.e., mother-to-child
+./plos/pmed.0020281.txt:        2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
 ```
