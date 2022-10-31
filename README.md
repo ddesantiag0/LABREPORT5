@@ -169,3 +169,13 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "ups"  ./911report/*.txt
                 groups of civilians descended from that floor. Others remained on the floor to help
                 the lobby via radio. Some units were directed to assist specific groups of
 ```
+**Example 3 of "-h"**
+```
+desantiago@Davids-MacBook-Air-2 technical % grep -h "burns"  ./biomed/*.txt   
+          information on: skin characteristics, sunburns and
+        of actinic keratosis, history of sunburns), then the lack
+            substitute chemical include acute irritation and burns
+          addition, patients with burns, hemorrhagic shock or those
+        trauma, burns, haemorrhages, hypothermia, pancreatitis and
+        are massively elevated in burns [ 11], heat stroke [ 21],
+```
