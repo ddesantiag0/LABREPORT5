@@ -70,3 +70,14 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt
 ./biomed/1471-2091-3-17.txt:0
 ./biomed/1471-2091-3-18.txt:0
 ```
+### grep -h 
+
+### Example 1 of "-h"
+desantiago@Davids-MacBook-Air-2 technical % grep -h "tired"  ./biomed/*.txt
+          tired of being sick and tired and I knew I could be a
+          better parent to my children and I just was tired. I
+          C57Bl/6J retired breeders also obtained from The Jackson
+          nervous? Does your tinnitus make you feel tired or
+          young retired breeders, were purchased from the National
+          retired: bo322, bo395, bo663, bo667, bo669 and bo671 (G.
+          candidate CDSs include retired Bnums (six Magnums), CDSs
