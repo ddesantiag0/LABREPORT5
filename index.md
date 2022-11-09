@@ -26,6 +26,9 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "call"  ./911report/*.txt
 ./911report/chapter-9.txt:60
 ./911report/preface.txt:0
 ```
+
+In this examples it printed all the files that had the matching line of "call" and how many occurences happened at the end in the files 911report.
+
 **Example 2 of "-c"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "words"  ./plos/*.txt      
@@ -47,6 +50,9 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "words"  ./plos/*.txt
 ./plos/journal.pbio.0020063.txt:0
 ./plos/journal.pbio.0020064.txt:0
 ```
+
+In this examples it printed all the files that had the matching line of "words" and how many occurences happened at the end in the files plos.
+
 **Example 3 of "-c"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt    
@@ -70,6 +76,9 @@ desantiago@Davids-MacBook-Air-2 technical % grep -c "tired"  ./biomed/*.txt
 ./biomed/1471-2091-3-17.txt:0
 ./biomed/1471-2091-3-18.txt:0
 ```
+
+In this examples it printed all the files that had the matching line of "tired" and how many occurences happened at the end in the files biomed.
+
 ### grep -h 
 Show only the lines that match and hide the filenames. This is useful when already in a certain file and you dont want it to repeatively keep on printing along with the text that you know you're in.
 
@@ -85,6 +94,9 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "tired"  ./biomed/*.txt
           retired: bo322, bo395, bo663, bo667, bo669 and bo671 (G.
           candidate CDSs include retired Bnums (six Magnums), CDSs
 ```
+
+The command caused to have the text that had the query "tired" in biomed to printed out.
+
 **Example 2 of "-h"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -h "ups"  ./911report/*.txt
@@ -170,6 +182,9 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "ups"  ./911report/*.txt
                 groups of civilians descended from that floor. Others remained on the floor to help
                 the lobby via radio. Some units were directed to assist specific groups of
 ```
+
+The command caused to have the text that had the query "ups" in 911report to printed out.
+
 **Example 3 of "-h"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -h "burns"  ./biomed/*.txt   
@@ -180,6 +195,8 @@ desantiago@Davids-MacBook-Air-2 technical % grep -h "burns"  ./biomed/*.txt
         trauma, burns, haemorrhages, hypothermia, pancreatitis and
         are massively elevated in burns [ 11], heat stroke [ 21],
 ```
+
+The command caused to have the text that had the query "burns" in biomed to printed out.
 
 ### grep -w
 Displays the matching entire word along with in what exact file it was found. This is useful when you need to know where to find the certain phrase you're looking for
@@ -193,11 +210,15 @@ desantiago@Davids-MacBook-Air-2 technical % grep -w "burns"  ./biomed/*.txt
 ./biomed/cc300.txt:        are massively elevated in burns [ 11], heat stroke [ 21],
 ```
 
+This commmand caused to the file with the direct line of text that contains the query of "burns."
+
 **Example 2 of "w"**
 ```
 desantiago@Davids-MacBook-Air-2 technical % grep -w "cops"  ./911report/*.txt
 ./911report/chapter-9.txt:                to take orders from cops. At least one firefighter who was in the North Tower has
 ```
+
+This commmand caused to the file with the direct line of text that contains the query of "cops."
 
 **Example 3 of "w"**
 ```
@@ -232,3 +253,5 @@ desantiago@Davids-MacBook-Air-2 technical % grep -w "child"  ./plos/*.txt
 ./plos/pmed.0020249.txt:        studies surprisingly showed that two-thirds of perinatal infections (i.e., mother-to-child
 ./plos/pmed.0020281.txt:        2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
 ```
+
+This commmand caused to the file with the direct line of text that contains the query of "w."
